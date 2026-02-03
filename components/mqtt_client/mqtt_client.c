@@ -1,8 +1,8 @@
 #include "mqtt_client.h"
-#include "uart_manager.h"
+#include "uart_manager/uart.h"
 #include "esp_log.h"
 #include "cJSON.h"
-#include "wifi_manager.h"
+#include "wifi_manager/wifi_manager.h"
 
 static const char *TAG = "MQTT_CLIENT";
 static esp_mqtt_client_handle_t mqtt_client = NULL;

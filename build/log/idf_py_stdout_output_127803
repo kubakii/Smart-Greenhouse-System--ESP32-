@@ -1,0 +1,192 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] espressif/cjson (1.7.19)
+NOTICE: [2/2] idf (5.2.0)
+-- Project sdkconfig file /home/bot/esp32/SmartGreenhouse/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "SmartGreenhouse" version: e9e3637-dirty
+-- Adding linker script /home/bot/esp32/SmartGreenhouse/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/bot/esp32/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/bot/esp32/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/bot/esp32/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/bot/esp32/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/bot/esp32/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/bot/esp32/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/bot/esp32/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/bot/esp32/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__cjson esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lvgl lvgl_driver lwip main mbedtls mqtt mqtt_client newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport toucholed uart_manager ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/bot/esp32/esp-idf/components/app_trace /home/bot/esp32/esp-idf/components/app_update /home/bot/esp32/esp-idf/components/bootloader /home/bot/esp32/esp-idf/components/bootloader_support /home/bot/esp32/esp-idf/components/bt /home/bot/esp32/esp-idf/components/cmock /home/bot/esp32/esp-idf/components/console /home/bot/esp32/esp-idf/components/cxx /home/bot/esp32/esp-idf/components/driver /home/bot/esp32/esp-idf/components/efuse /home/bot/esp32/esp-idf/components/esp-tls /home/bot/esp32/esp-idf/components/esp_adc /home/bot/esp32/esp-idf/components/esp_app_format /home/bot/esp32/esp-idf/components/esp_bootloader_format /home/bot/esp32/esp-idf/components/esp_coex /home/bot/esp32/esp-idf/components/esp_common /home/bot/esp32/esp-idf/components/esp_eth /home/bot/esp32/esp-idf/components/esp_event /home/bot/esp32/esp-idf/components/esp_gdbstub /home/bot/esp32/esp-idf/components/esp_hid /home/bot/esp32/esp-idf/components/esp_http_client /home/bot/esp32/esp-idf/components/esp_http_server /home/bot/esp32/esp-idf/components/esp_https_ota /home/bot/esp32/esp-idf/components/esp_https_server /home/bot/esp32/esp-idf/components/esp_hw_support /home/bot/esp32/esp-idf/components/esp_lcd /home/bot/esp32/esp-idf/components/esp_local_ctrl /home/bot/esp32/esp-idf/components/esp_mm /home/bot/esp32/esp-idf/components/esp_netif /home/bot/esp32/esp-idf/components/esp_netif_stack /home/bot/esp32/esp-idf/components/esp_partition /home/bot/esp32/esp-idf/components/esp_phy /home/bot/esp32/esp-idf/components/esp_pm /home/bot/esp32/esp-idf/components/esp_psram /home/bot/esp32/esp-idf/components/esp_ringbuf /home/bot/esp32/esp-idf/components/esp_rom /home/bot/esp32/esp-idf/components/esp_system /home/bot/esp32/esp-idf/components/esp_timer /home/bot/esp32/esp-idf/components/esp_wifi /home/bot/esp32/esp-idf/components/espcoredump /home/bot/esp32/SmartGreenhouse/managed_components/espressif__cjson /home/bot/esp32/esp-idf/components/esptool_py /home/bot/esp32/esp-idf/components/fatfs /home/bot/esp32/esp-idf/components/freertos /home/bot/esp32/esp-idf/components/hal /home/bot/esp32/esp-idf/components/heap /home/bot/esp32/esp-idf/components/http_parser /home/bot/esp32/esp-idf/components/idf_test /home/bot/esp32/esp-idf/components/ieee802154 /home/bot/esp32/esp-idf/components/json /home/bot/esp32/esp-idf/components/log /home/bot/esp32/SmartGreenhouse/components/lvgl /home/bot/esp32/SmartGreenhouse/components/lvgl_driver /home/bot/esp32/esp-idf/components/lwip /home/bot/esp32/SmartGreenhouse/main /home/bot/esp32/esp-idf/components/mbedtls /home/bot/esp32/esp-idf/components/mqtt /home/bot/esp32/SmartGreenhouse/components/mqtt_client /home/bot/esp32/esp-idf/components/newlib /home/bot/esp32/esp-idf/components/nvs_flash /home/bot/esp32/esp-idf/components/nvs_sec_provider /home/bot/esp32/esp-idf/components/openthread /home/bot/esp32/esp-idf/components/partition_table /home/bot/esp32/esp-idf/components/perfmon /home/bot/esp32/esp-idf/components/protobuf-c /home/bot/esp32/esp-idf/components/protocomm /home/bot/esp32/esp-idf/components/pthread /home/bot/esp32/esp-idf/components/sdmmc /home/bot/esp32/esp-idf/components/soc /home/bot/esp32/esp-idf/components/spi_flash /home/bot/esp32/esp-idf/components/spiffs /home/bot/esp32/esp-idf/components/tcp_transport /home/bot/esp32/SmartGreenhouse/components/toucholed /home/bot/esp32/SmartGreenhouse/components/uart_manager /home/bot/esp32/esp-idf/components/ulp /home/bot/esp32/esp-idf/components/unity /home/bot/esp32/esp-idf/components/usb /home/bot/esp32/esp-idf/components/vfs /home/bot/esp32/esp-idf/components/wear_levelling /home/bot/esp32/esp-idf/components/wifi_provisioning /home/bot/esp32/esp-idf/components/wpa_supplicant /home/bot/esp32/esp-idf/components/xtensa
+-- Configuring done (3.3s)
+-- Generating done (0.2s)
+-- Build files have been written to: /home/bot/esp32/SmartGreenhouse/build
+[1/21] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[2/21] Performing build step for 'bootloader'
+[1/1] cd /home/bot/esp32/SmartGreenhouse/build/bootloader/esp-idf/esptool_py && /home/bot/.espressif/python_env/idf5.2_py3.12_env/bin/python /home/bot/esp32/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/bot/esp32/SmartGreenhouse/build/bootloader/bootloader.bin
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[3/21] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[4/21] No install step for 'bootloader'
+[5/21] Completed 'bootloader'
+[6/21] Building C object esp-idf/espressif__cjson/CMakeFiles/__idf_espressif__cjson.dir/cJSON/cJSON_Utils.c.obj
+[7/21] Building C object esp-idf/lvgl_driver/CMakeFiles/__idf_lvgl_driver.dir/lvgl_driver.c.obj
+FAILED: esp-idf/lvgl_driver/CMakeFiles/__idf_lvgl_driver.dir/lvgl_driver.c.obj 
+/home/bot/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.2\" -DLV_CONF_INCLUDE_SIMPLE -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/bot/esp32/SmartGreenhouse/build/config -I/home/bot/esp32/SmartGreenhouse/components/lvgl_driver -I/home/bot/esp32/esp-idf/components/newlib/platform_include -I/home/bot/esp32/esp-idf/components/freertos/config/include -I/home/bot/esp32/esp-idf/components/freertos/config/include/freertos -I/home/bot/esp32/esp-idf/components/freertos/config/xtensa/include -I/home/bot/esp32/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/bot/esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/bot/esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/bot/esp32/esp-idf/components/freertos/esp_additions/include -I/home/bot/esp32/esp-idf/components/esp_hw_support/include -I/home/bot/esp32/esp-idf/components/esp_hw_support/include/soc -I/home/bot/esp32/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/bot/esp32/esp-idf/components/esp_hw_support/port/esp32/. -I/home/bot/esp32/esp-idf/components/heap/include -I/home/bot/esp32/esp-idf/components/log/include -I/home/bot/esp32/esp-idf/components/soc/include -I/home/bot/esp32/esp-idf/components/soc/esp32 -I/home/bot/esp32/esp-idf/components/soc/esp32/include -I/home/bot/esp32/esp-idf/components/hal/platform_port/include -I/home/bot/esp32/esp-idf/components/hal/esp32/include -I/home/bot/esp32/esp-idf/components/hal/include -I/home/bot/esp32/esp-idf/components/esp_rom/include -I/home/bot/esp32/esp-idf/components/esp_rom/include/esp32 -I/home/bot/esp32/esp-idf/components/esp_rom/esp32 -I/home/bot/esp32/esp-idf/components/esp_common/include -I/home/bot/esp32/esp-idf/components/esp_system/include -I/home/bot/esp32/esp-idf/components/esp_system/port/soc -I/home/bot/esp32/esp-idf/components/esp_system/port/include/private -I/home/bot/esp32/esp-idf/components/xtensa/esp32/include -I/home/bot/esp32/esp-idf/components/xtensa/include -I/home/bot/esp32/esp-idf/components/xtensa/deprecated_include -I/home/bot/esp32/esp-idf/components/lwip/include -I/home/bot/esp32/esp-idf/components/lwip/include/apps -I/home/bot/esp32/esp-idf/components/lwip/include/apps/sntp -I/home/bot/esp32/esp-idf/components/lwip/lwip/src/include -I/home/bot/esp32/esp-idf/components/lwip/port/include -I/home/bot/esp32/esp-idf/components/lwip/port/freertos/include -I/home/bot/esp32/esp-idf/components/lwip/port/esp32xx/include -I/home/bot/esp32/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/bot/esp32/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/bot/esp32/esp-idf/components/driver/include -I/home/bot/esp32/esp-idf/components/driver/deprecated -I/home/bot/esp32/esp-idf/components/driver/analog_comparator/include -I/home/bot/esp32/esp-idf/components/driver/dac/include -I/home/bot/esp32/esp-idf/components/driver/gpio/include -I/home/bot/esp32/esp-idf/components/driver/gptimer/include -I/home/bot/esp32/esp-idf/components/driver/i2c/include -I/home/bot/esp32/esp-idf/components/driver/i2s/include -I/home/bot/esp32/esp-idf/components/driver/ledc/include -I/home/bot/esp32/esp-idf/components/driver/mcpwm/include -I/home/bot/esp32/esp-idf/components/driver/parlio/include -I/home/bot/esp32/esp-idf/components/driver/pcnt/include -I/home/bot/esp32/esp-idf/components/driver/rmt/include -I/home/bot/esp32/esp-idf/components/driver/sdio_slave/include -I/home/bot/esp32/esp-idf/components/driver/sdmmc/include -I/home/bot/esp32/esp-idf/components/driver/sigma_delta/include -I/home/bot/esp32/esp-idf/components/driver/spi/include -I/home/bot/esp32/esp-idf/components/driver/temperature_sensor/include -I/home/bot/esp32/esp-idf/components/driver/touch_sensor/include -I/home/bot/esp32/esp-idf/components/driver/twai/include -I/home/bot/esp32/esp-idf/components/driver/uart/include -I/home/bot/esp32/esp-idf/components/driver/usb_serial_jtag/include -I/home/bot/esp32/esp-idf/components/driver/touch_sensor/esp32/include -I/home/bot/esp32/esp-idf/components/esp_pm/include -I/home/bot/esp32/esp-idf/components/esp_ringbuf/include -I/home/bot/esp32/esp-idf/components/esp_lcd/include -I/home/bot/esp32/esp-idf/components/esp_lcd/interface -I/home/bot/esp32/SmartGreenhouse/components/lvgl -I/home/bot/esp32/SmartGreenhouse/components/lvgl/src -I/home/bot/esp32/SmartGreenhouse/components -I/home/bot/esp32/SmartGreenhouse/components/lvgl/examples -I/home/bot/esp32/SmartGreenhouse/components/lvgl/demos -I/home/bot/esp32/esp-idf/components/esp_timer/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/bot/esp32/SmartGreenhouse=. -fmacro-prefix-map=/home/bot/esp32/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/lvgl_driver/CMakeFiles/__idf_lvgl_driver.dir/lvgl_driver.c.obj -MF esp-idf/lvgl_driver/CMakeFiles/__idf_lvgl_driver.dir/lvgl_driver.c.obj.d -o esp-idf/lvgl_driver/CMakeFiles/__idf_lvgl_driver.dir/lvgl_driver.c.obj -c /home/bot/esp32/SmartGreenhouse/components/lvgl_driver/lvgl_driver.c
+In file included from /home/bot/esp32/SmartGreenhouse/components/lvgl_driver/lvgl_driver.c:1:
+/home/bot/esp32/SmartGreenhouse/components/lvgl_driver/lvgl_driver.h:10:10: fatal error: st7789.h: No such file or directory
+   10 | #include "st7789.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+[8/21] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/SmartGreenhouse.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/SmartGreenhouse.c.obj 
+/home/bot/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.2\" -DLV_CONF_INCLUDE_SIMPLE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/bot/esp32/SmartGreenhouse/build/config -I/home/bot/esp32/SmartGreenhouse/main -I/home/bot/esp32/esp-idf/components/newlib/platform_include -I/home/bot/esp32/esp-idf/components/freertos/config/include -I/home/bot/esp32/esp-idf/components/freertos/config/include/freertos -I/home/bot/esp32/esp-idf/components/freertos/config/xtensa/include -I/home/bot/esp32/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/bot/esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/bot/esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/bot/esp32/esp-idf/components/freertos/esp_additions/include -I/home/bot/esp32/esp-idf/components/esp_hw_support/include -I/home/bot/esp32/esp-idf/components/esp_hw_support/include/soc -I/home/bot/esp32/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/bot/esp32/esp-idf/components/esp_hw_support/port/esp32/. -I/home/bot/esp32/esp-idf/components/heap/include -I/home/bot/esp32/esp-idf/components/log/include -I/home/bot/esp32/esp-idf/components/soc/include -I/home/bot/esp32/esp-idf/components/soc/esp32 -I/home/bot/esp32/esp-idf/components/soc/esp32/include -I/home/bot/esp32/esp-idf/components/hal/platform_port/include -I/home/bot/esp32/esp-idf/components/hal/esp32/include -I/home/bot/esp32/esp-idf/components/hal/include -I/home/bot/esp32/esp-idf/components/esp_rom/include -I/home/bot/esp32/esp-idf/components/esp_rom/include/esp32 -I/home/bot/esp32/esp-idf/components/esp_rom/esp32 -I/home/bot/esp32/esp-idf/components/esp_common/include -I/home/bot/esp32/esp-idf/components/esp_system/include -I/home/bot/esp32/esp-idf/components/esp_system/port/soc -I/home/bot/esp32/esp-idf/components/esp_system/port/include/private -I/home/bot/esp32/esp-idf/components/xtensa/esp32/include -I/home/bot/esp32/esp-idf/components/xtensa/include -I/home/bot/esp32/esp-idf/components/xtensa/deprecated_include -I/home/bot/esp32/esp-idf/components/lwip/include -I/home/bot/esp32/esp-idf/components/lwip/include/apps -I/home/bot/esp32/esp-idf/components/lwip/include/apps/sntp -I/home/bot/esp32/esp-idf/components/lwip/lwip/src/include -I/home/bot/esp32/esp-idf/components/lwip/port/include -I/home/bot/esp32/esp-idf/components/lwip/port/freertos/include -I/home/bot/esp32/esp-idf/components/lwip/port/esp32xx/include -I/home/bot/esp32/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/bot/esp32/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/bot/esp32/SmartGreenhouse/managed_components/espressif__cjson/cJSON -I/home/bot/esp32/esp-idf/components/esp_ringbuf/include -I/home/bot/esp32/esp-idf/components/efuse/include -I/home/bot/esp32/esp-idf/components/efuse/esp32/include -I/home/bot/esp32/esp-idf/components/esp_mm/include -I/home/bot/esp32/esp-idf/components/driver/include -I/home/bot/esp32/esp-idf/components/driver/deprecated -I/home/bot/esp32/esp-idf/components/driver/analog_comparator/include -I/home/bot/esp32/esp-idf/components/driver/dac/include -I/home/bot/esp32/esp-idf/components/driver/gpio/include -I/home/bot/esp32/esp-idf/components/driver/gptimer/include -I/home/bot/esp32/esp-idf/components/driver/i2c/include -I/home/bot/esp32/esp-idf/components/driver/i2s/include -I/home/bot/esp32/esp-idf/components/driver/ledc/include -I/home/bot/esp32/esp-idf/components/driver/mcpwm/include -I/home/bot/esp32/esp-idf/components/driver/parlio/include -I/home/bot/esp32/esp-idf/components/driver/pcnt/include -I/home/bot/esp32/esp-idf/components/driver/rmt/include -I/home/bot/esp32/esp-idf/components/driver/sdio_slave/include -I/home/bot/esp32/esp-idf/components/driver/sdmmc/include -I/home/bot/esp32/esp-idf/components/driver/sigma_delta/include -I/home/bot/esp32/esp-idf/components/driver/spi/include -I/home/bot/esp32/esp-idf/components/driver/temperature_sensor/include -I/home/bot/esp32/esp-idf/components/driver/touch_sensor/include -I/home/bot/esp32/esp-idf/components/driver/twai/include -I/home/bot/esp32/esp-idf/components/driver/uart/include -I/home/bot/esp32/esp-idf/components/driver/usb_serial_jtag/include -I/home/bot/esp32/esp-idf/components/driver/touch_sensor/esp32/include -I/home/bot/esp32/esp-idf/components/esp_pm/include -I/home/bot/esp32/esp-idf/components/mbedtls/port/include -I/home/bot/esp32/esp-idf/components/mbedtls/mbedtls/include -I/home/bot/esp32/esp-idf/components/mbedtls/mbedtls/library -I/home/bot/esp32/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/bot/esp32/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/home/bot/esp32/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/home/bot/esp32/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/home/bot/esp32/esp-idf/components/esp_bootloader_format/include -I/home/bot/esp32/esp-idf/components/esp_app_format/include -I/home/bot/esp32/esp-idf/components/bootloader_support/include -I/home/bot/esp32/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/bot/esp32/esp-idf/components/esp_partition/include -I/home/bot/esp32/esp-idf/components/app_update/include -I/home/bot/esp32/esp-idf/components/spi_flash/include -I/home/bot/esp32/esp-idf/components/pthread/include -I/home/bot/esp32/esp-idf/components/esp_timer/include -I/home/bot/esp32/esp-idf/components/app_trace/include -I/home/bot/esp32/esp-idf/components/esp_event/include -I/home/bot/esp32/esp-idf/components/nvs_flash/include -I/home/bot/esp32/esp-idf/components/esp_phy/include -I/home/bot/esp32/esp-idf/components/esp_phy/esp32/include -I/home/bot/esp32/esp-idf/components/vfs/include -I/home/bot/esp32/esp-idf/components/esp_netif/include -I/home/bot/esp32/esp-idf/components/wpa_supplicant/include -I/home/bot/esp32/esp-idf/components/wpa_supplicant/port/include -I/home/bot/esp32/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/home/bot/esp32/esp-idf/components/esp_coex/include -I/home/bot/esp32/esp-idf/components/esp_wifi/include -I/home/bot/esp32/esp-idf/components/esp_wifi/wifi_apps/include -I/home/bot/esp32/esp-idf/components/unity/include -I/home/bot/esp32/esp-idf/components/unity/unity/src -I/home/bot/esp32/esp-idf/components/cmock/CMock/src -I/home/bot/esp32/esp-idf/components/console -I/home/bot/esp32/esp-idf/components/http_parser -I/home/bot/esp32/esp-idf/components/esp-tls -I/home/bot/esp32/esp-idf/components/esp-tls/esp-tls-crypto -I/home/bot/esp32/esp-idf/components/esp_adc/include -I/home/bot/esp32/esp-idf/components/esp_adc/interface -I/home/bot/esp32/esp-idf/components/esp_adc/esp32/include -I/home/bot/esp32/esp-idf/components/esp_adc/deprecated/include -I/home/bot/esp32/esp-idf/components/esp_eth/include -I/home/bot/esp32/esp-idf/components/esp_gdbstub/include -I/home/bot/esp32/esp-idf/components/esp_hid/include -I/home/bot/esp32/esp-idf/components/tcp_transport/include -I/home/bot/esp32/esp-idf/components/esp_http_client/include -I/home/bot/esp32/esp-idf/components/esp_http_server/include -I/home/bot/esp32/esp-idf/components/esp_https_ota/include -I/home/bot/esp32/esp-idf/components/esp_psram/include -I/home/bot/esp32/esp-idf/components/esp_lcd/include -I/home/bot/esp32/esp-idf/components/esp_lcd/interface -I/home/bot/esp32/esp-idf/components/protobuf-c/protobuf-c -I/home/bot/esp32/esp-idf/components/protocomm/include/common -I/home/bot/esp32/esp-idf/components/protocomm/include/security -I/home/bot/esp32/esp-idf/components/protocomm/include/transports -I/home/bot/esp32/esp-idf/components/protocomm/include/crypto/srp6a -I/home/bot/esp32/esp-idf/components/esp_local_ctrl/include -I/home/bot/esp32/esp-idf/components/espcoredump/include -I/home/bot/esp32/esp-idf/components/espcoredump/include/port/xtensa -I/home/bot/esp32/esp-idf/components/wear_levelling/include -I/home/bot/esp32/esp-idf/components/sdmmc/include -I/home/bot/esp32/esp-idf/components/fatfs/diskio -I/home/bot/esp32/esp-idf/components/fatfs/src -I/home/bot/esp32/esp-idf/components/fatfs/vfs -I/home/bot/esp32/esp-idf/components/idf_test/include -I/home/bot/esp32/esp-idf/components/idf_test/include/esp32 -I/home/bot/esp32/esp-idf/components/ieee802154/include -I/home/bot/esp32/esp-idf/components/json/cJSON -I/home/bot/esp32/esp-idf/components/mqtt/esp-mqtt/include -I/home/bot/esp32/esp-idf/components/nvs_sec_provider/include -I/home/bot/esp32/esp-idf/components/perfmon/include -I/home/bot/esp32/esp-idf/components/spiffs/include -I/home/bot/esp32/esp-idf/components/wifi_provisioning/include -I/home/bot/esp32/SmartGreenhouse/components/lvgl -I/home/bot/esp32/SmartGreenhouse/components/lvgl/src -I/home/bot/esp32/SmartGreenhouse/components -I/home/bot/esp32/SmartGreenhouse/components/lvgl/examples -I/home/bot/esp32/SmartGreenhouse/components/lvgl/demos -I/home/bot/esp32/SmartGreenhouse/components/lvgl_driver -I/home/bot/esp32/SmartGreenhouse/components/mqtt_client -I/home/bot/esp32/SmartGreenhouse/components/toucholed -I/home/bot/esp32/SmartGreenhouse/components/uart_manager -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/bot/esp32/SmartGreenhouse=. -fmacro-prefix-map=/home/bot/esp32/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/SmartGreenhouse.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/SmartGreenhouse.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/SmartGreenhouse.c.obj -c /home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c
+In file included from /home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:9:
+/home/bot/esp32/SmartGreenhouse/components/lvgl_driver/lvgl_driver.h:23: warning: "LV_COLOR_DEPTH" redefined
+   23 | #define LV_COLOR_DEPTH          16
+      | 
+In file included from /home/bot/esp32/SmartGreenhouse/components/lvgl/src/misc/lv_log.h:16,
+                 from /home/bot/esp32/SmartGreenhouse/components/lvgl/lvgl.h:25,
+                 from /home/bot/esp32/SmartGreenhouse/components/lvgl_driver/lvgl_driver.h:4:
+/home/bot/esp32/SmartGreenhouse/components/lvgl/src/misc/../lv_conf_internal.h:67: note: this is the location of the previous definition
+   67 |         #define LV_COLOR_DEPTH CONFIG_LV_COLOR_DEPTH
+      | 
+/home/bot/esp32/SmartGreenhouse/components/lvgl_driver/lvgl_driver.h:24: warning: "LV_COLOR_16_SWAP" redefined
+   24 | #define LV_COLOR_16_SWAP        1   // 交换RGB565的字节顺序
+      | 
+/home/bot/esp32/SmartGreenhouse/components/lvgl/src/misc/../lv_conf_internal.h:78: note: this is the location of the previous definition
+   78 |         #define LV_COLOR_16_SWAP 0
+      | 
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c: In function 'sensor_data_task':
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:26:36: error: implicit declaration of function 'get_uart_receive_queue'; did you mean 'get_uart_send_queue'? [-Werror=implicit-function-declaration]
+   26 |         QueueHandle_t uart_queue = get_uart_receive_queue();
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~
+      |                                    get_uart_send_queue
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:26:36: warning: initialization of 'QueueHandle_t' {aka 'struct QueueDefinition *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:29:13: error: implicit declaration of function 'update_temperature_display' [-Werror=implicit-function-declaration]
+   29 |             update_temperature_display(sensor_data.temperature);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:30:13: error: implicit declaration of function 'update_humidity_display' [-Werror=implicit-function-declaration]
+   30 |             update_humidity_display(sensor_data.humidity);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:31:13: error: implicit declaration of function 'update_light_display' [-Werror=implicit-function-declaration]
+   31 |             update_light_display(sensor_data.light_level);
+      |             ^~~~~~~~~~~~~~~~~~~~
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:32:13: error: implicit declaration of function 'update_soil_display' [-Werror=implicit-function-declaration]
+   32 |             update_soil_display(sensor_data.soil_moisture);
+      |             ^~~~~~~~~~~~~~~~~~~
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:35:13: error: implicit declaration of function 'mqtt_publish_sensor_data' [-Werror=implicit-function-declaration]
+   35 |             mqtt_publish_sensor_data(sensor_data.temperature,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c: In function 'app_init':
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:57:5: error: too few arguments to function 'lvgl_driver_init'
+   57 |     lvgl_driver_init();
+      |     ^~~~~~~~~~~~~~~~
+/home/bot/esp32/SmartGreenhouse/components/lvgl_driver/lvgl_driver.h:109:11: note: declared here
+  109 | esp_err_t lvgl_driver_init(const lvgl_driver_config_t* config);
+      |           ^~~~~~~~~~~~~~~~
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:60:5: error: implicit declaration of function 'mqtt_client_init'; did you mean 'esp_mqtt_client_init'? [-Werror=implicit-function-declaration]
+   60 |     mqtt_client_init();
+      |     ^~~~~~~~~~~~~~~~
+      |     esp_mqtt_client_init
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c: In function 'app_main':
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:73:17: error: 'lvgl_driver_task' undeclared (first use in this function); did you mean 'lvgl_driver_init'?
+   73 |     xTaskCreate(lvgl_driver_task, "lvgl_task", 8192, NULL, 20, NULL);
+      |                 ^~~~~~~~~~~~~~~~
+      |                 lvgl_driver_init
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:73:17: note: each undeclared identifier is reported only once for each function it appears in
+In file included from /home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:5:
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:291:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:83:13: note: in expansion of macro 'ESP_LOGI'
+   83 |             ESP_LOGI(TAG, "System running... Free heap: %d bytes", esp_get_free_heap_size());
+      |             ^~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:291:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:83:13: note: in expansion of macro 'ESP_LOGI'
+   83 |             ESP_LOGI(TAG, "System running... Free heap: %d bytes", esp_get_free_heap_size());
+      |             ^~~~~~~~
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:83:1: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   83 |             ESP_LOGI(TAG, "System running... Free heap: %d bytes", esp_get_free_heap_size());
+      | ^          
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:83:13: note: in expansion of macro 'ESP_LOGI'
+   83 |             ESP_LOGI(TAG, "System running... Free heap: %d bytes", esp_get_free_heap_size());
+      |             ^~~~~~~~
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:83:1: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   83 |             ESP_LOGI(TAG, "System running... Free heap: %d bytes", esp_get_free_heap_size());
+      | ^          
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:83:13: note: in expansion of macro 'ESP_LOGI'
+   83 |             ESP_LOGI(TAG, "System running... Free heap: %d bytes", esp_get_free_heap_size());
+      |             ^~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:291:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/bot/esp32/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/bot/esp32/SmartGreenhouse/main/SmartGreenhouse.c:83:13: note: in expansion of macro 'ESP_LOGI'
+   83 |             ESP_LOGI(TAG, "System running... Free heap: %d bytes", esp_get_free_heap_size());
+      |             ^~~~~~~~
+cc1: some warnings being treated as errors
+[9/21] Building C object esp-idf/espressif__cjson/CMakeFiles/__idf_espressif__cjson.dir/cJSON/cJSON.c.obj
+ninja: build stopped: subcommand failed.

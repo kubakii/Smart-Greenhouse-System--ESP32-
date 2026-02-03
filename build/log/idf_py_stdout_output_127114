@@ -1,0 +1,7 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+NOTICE: Processing 1 dependencies:
+NOTICE: [1/1] idf (5.2.0)
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/bot/esp32/SmartGreenhouse -B/home/bot/esp32/SmartGreenhouse/build

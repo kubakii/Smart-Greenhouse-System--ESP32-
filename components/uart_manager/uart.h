@@ -5,11 +5,12 @@
 #include "freertos/task.h"
 #include "freertos/queue.h"
 #include "driver/uart.h"
+#include "driver/gpio.h"
 #include "esp_log.h"
 
 #define UART_NUM UART_NUM_1
-#define UART_TX_PIN GPIO_NUM_17
-#define UART_RX_PIN GPIO_NUM_16
+#define UART_TX_PIN         GPIO_NUM_17
+#define UART_RX_PIN         GPIO_NUM_16
 #define BUF_SIZE (1024)
 #define RD_BUF_SIZE (BUF_SIZE)
 

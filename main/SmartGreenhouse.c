@@ -8,7 +8,7 @@
 #include "uart.h"
 #include "lvgl_driver.h"
 #include "mqtt_client.h"
-#include "wifi_driver.h"
+#include "wifi_manager.h"
 
 static const char *TAG = "MAIN";
 
@@ -70,7 +70,7 @@ void app_main(void) {
     app_init();
     
     // 创建任务
-    xTaskCreate(lvgl_driver_task, "lvgl_task", 8192, NULL, 20, NULL);
+    xTaskCreate(lvgl_task, "lvgl_task", 8192, NULL, 20, NULL);
     xTaskCreate(sensor_data_task, "sensor_task", 4096, NULL, 16, NULL);
     
     // 主循环

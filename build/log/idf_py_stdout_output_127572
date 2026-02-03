@@ -1,0 +1,10 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+NOTICE: Dependencies lock doesn't exist, solving dependencies.
+...NOTICE: Updating lock file at /home/bot/esp32/SmartGreenhouse/dependencies.lock
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] espressif/cjson (1.7.19)
+NOTICE: [2/2] idf (5.2.0)
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/bot/esp32/SmartGreenhouse -B/home/bot/esp32/SmartGreenhouse/build

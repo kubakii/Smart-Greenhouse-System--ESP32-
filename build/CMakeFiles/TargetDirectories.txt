@@ -628,6 +628,13 @@
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/wifi_provisioning/CMakeFiles/install.dir
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/wifi_provisioning/CMakeFiles/install/local.dir
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/wifi_provisioning/CMakeFiles/install/strip.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/espressif__cjson/CMakeFiles/__idf_espressif__cjson.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/espressif__cjson/CMakeFiles/edit_cache.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/espressif__cjson/CMakeFiles/rebuild_cache.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/espressif__cjson/CMakeFiles/list_install_components.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/espressif__cjson/CMakeFiles/install.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/espressif__cjson/CMakeFiles/install/local.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/espressif__cjson/CMakeFiles/install/strip.dir
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/main/CMakeFiles/__idf_main.dir
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/main/CMakeFiles/edit_cache.dir
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/main/CMakeFiles/rebuild_cache.dir
@@ -670,3 +677,10 @@
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/uart_manager/CMakeFiles/install.dir
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/uart_manager/CMakeFiles/install/local.dir
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/uart_manager/CMakeFiles/install/strip.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/wifi_manager/CMakeFiles/__idf_wifi_manager.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/wifi_manager/CMakeFiles/edit_cache.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/wifi_manager/CMakeFiles/rebuild_cache.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/wifi_manager/CMakeFiles/list_install_components.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/wifi_manager/CMakeFiles/install.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/wifi_manager/CMakeFiles/install/local.dir
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/wifi_manager/CMakeFiles/install/strip.dir

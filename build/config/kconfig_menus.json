@@ -26266,10 +26266,7 @@
                                 "help": null,
                                 "id": "LV_MEM_SIZE_KILOBYTES",
                                 "name": "LV_MEM_SIZE_KILOBYTES",
-                                "range": [
-                                    2,
-                                    128
-                                ],
+                                "range": null,
                                 "title": "Size of the memory used by `lv_mem_alloc` in kilobytes (>= 2kB)",
                                 "type": "int"
                             },

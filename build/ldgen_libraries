@@ -61,9 +61,11 @@
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/perfmon/libperfmon.a
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/spiffs/libspiffs.a
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/espressif__cjson/libespressif__cjson.a
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/main/libmain.a
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/lvgl/liblvgl.a
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/lvgl_driver/liblvgl_driver.a
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/mqtt_client/libmqtt_client.a
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/toucholed/libtoucholed.a
 /home/bot/esp32/SmartGreenhouse/build/esp-idf/uart_manager/libuart_manager.a
+/home/bot/esp32/SmartGreenhouse/build/esp-idf/wifi_manager/libwifi_manager.a
