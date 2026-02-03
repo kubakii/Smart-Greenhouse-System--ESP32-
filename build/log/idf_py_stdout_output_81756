@@ -1,0 +1,322 @@
+x�x�x�x�2��ѽ���ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  3 2026 13:26:45[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v1.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0cdc8h ( 52680) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001cdf0 vaddr=3ffb0000 size=023c4h (  9156) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001f1bc vaddr=40080000 size=00e5ch (  3676) load[0m
+[0;32mI (127) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18fc0h (102336) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00038fe8 vaddr=40080e5c size=0f0e0h ( 61664) load[0m
+[0;32mI (202) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (202) boot: Disabling RNG early entropy source...[0m
+[0;32mI (213) cpu_start: Multicore app[0m
+[0;32mI (222) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (225) cpu_start: Project name:     SmartGreenhouse[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Feb  3 2026 13:26:40[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  9cb28eee8...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (251) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (256) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (261) cpu_start: Chip rev:         v1.1[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (273) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFB2D18 len 0002D2E8 (180 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (291) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 4008FF3C len 000100C4 (64 KiB): IRAM[0m
+[0;32mI (305) spi_flash: detected chip: generic[0m
+[0;32mI (309) spi_flash: flash io: dio[0m
+[0;33mW (313) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (326) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (347) main_task: Calling app_main()[0m
+[0;32mI (347) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (357) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (497) ST7789: Starting ST7789 initialization sequence[0m
+[0;32mI (917) ST7789: ST7789 initialization completed[0m
+[0;32mI (917) ST7789: ST7789 initialized successfully[0m
+[0;32mI (917) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (927) FT6336U: FT6336U initialized successfully[0m
+Touch: x=18, y=0, gesture=0x00
+Touch: x=18, y=0, gesture=0x00
+Touch: x=18, y=0, gesture=0x00
+Touch: x=20, y=0, gesture=0x00
+Touch: x=22, y=0, gesture=0x00
+Touch: x=23, y=0, gesture=0x00
+Touch: x=26, y=0, gesture=0x00
+Touch: x=26, y=0, gesture=0x00
+Touch: x=26, y=0, gesture=0x00
+Touch: x=26, y=0, gesture=0x00
+Touch: x=26, y=0, gesture=0x00
+Touch: x=26, y=0, gesture=0x00
+Touch: x=26, y=0, gesture=0x00
+Touch: x=27, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=29, y=0, gesture=0x00
+Touch: x=103, y=93, gesture=0x00
+Touch: x=103, y=93, gesture=0x00
+Touch: x=103, y=93, gesture=0x00
+Touch: x=103, y=93, gesture=0x00
+Touch: x=103, y=93, gesture=0x00
+Touch: x=103, y=93, gesture=0x00
+Touch: x=103, y=93, gesture=0x00
+Touch: x=180, y=145, gesture=0x00
+Touch: x=178, y=145, gesture=0x00
+Touch: x=167, y=140, gesture=0x00
+Touch: x=151, y=139, gesture=0x00
+Touch: x=133, y=139, gesture=0x00
+Touch: x=116, y=139, gesture=0x00
+Touch: x=106, y=139, gesture=0x00
+Touch: x=101, y=139, gesture=0x00
+Touch: x=106, y=132, gesture=0x00
+Touch: x=130, y=117, gesture=0x00
+Touch: x=159, y=100, gesture=0x00
+Touch: x=178, y=88, gesture=0x00
+Touch: x=188, y=81, gesture=0x00
+Touch: x=192, y=79, gesture=0x00
+Touch: x=182, y=74, gesture=0x00
+Touch: x=156, y=74, gesture=0x00
+Touch: x=124, y=78, gesture=0x00
+Touch: x=110, y=83, gesture=0x00
+Touch: x=104, y=90, gesture=0x00
+Touch: x=108, y=108, gesture=0x00
+Touch: x=129, y=134, gesture=0x00
+Touch: x=159, y=161, gesture=0x00
+Touch: x=169, y=171, gesture=0x00
+Touch: x=171, y=174, gesture=0x00
+Touch: x=159, y=177, gesture=0x00
+Touch: x=130, y=179, gesture=0x00
+Touch: x=97, y=181, gesture=0x00
+Touch: x=82, y=187, gesture=0x00
+Touch: x=79, y=200, gesture=0x00
+Touch: x=90, y=222, gesture=0x00
+Touch: x=103, y=241, gesture=0x00
+Touch: x=105, y=246, gesture=0x00
+Touch: x=94, y=250, gesture=0x00
+Touch: x=73, y=255, gesture=0x00
+Touch: x=54, y=260, gesture=0x00
+Touch: x=43, y=267, gesture=0x00
+Touch: x=42, y=274, gesture=0x00
+Touch: x=49, y=283, gesture=0x00
+Touch: x=59, y=286, gesture=0x00
+Touch: x=59, y=286, gesture=0x00
+Touch: x=59, y=286, gesture=0x00
+Touch: x=59, y=286, gesture=0x00
+Touch: x=59, y=286, gesture=0x00
+Touch: x=63, y=34, gesture=0x00
+Touch: x=63, y=36, gesture=0x00
+Touch: x=63, y=64, gesture=0x00
+Touch: x=63, y=115, gesture=0x00
+Touch: x=63, y=166, gesture=0x00
+Touch: x=63, y=166, gesture=0x00
+Touch: x=63, y=166, gesture=0x00
+Touch: x=63, y=166, gesture=0x00
+Touch: x=63, y=166, gesture=0x00
+Touch: x=63, y=166, gesture=0x00
+Touch: x=22, y=57, gesture=0x00
+Touch: x=22, y=111, gesture=0x00
+Touch: x=22, y=111, gesture=0x00
+Touch: x=22, y=111, gesture=0x00
+Touch: x=22, y=111, gesture=0x00
+Touch: x=22, y=111, gesture=0x00
+Touch: x=22, y=111, gesture=0x00
+Touch: x=22, y=111, gesture=0x00
+Touch: x=22, y=111, gesture=0x00
+Touch: x=22, y=111, gesture=0x00
+Touch: x=22, y=111, gesture=0x00
+Touch: x=215, y=121, gesture=0x00
+Touch: x=215, y=121, gesture=0x00
+Touch: x=215, y=121, gesture=0x00
+Touch: x=215, y=121, gesture=0x00
+Touch: x=215, y=121, gesture=0x00
+Touch: x=215, y=121, gesture=0x00
+Touch: x=215, y=121, gesture=0x00
+Touch: x=215, y=121, gesture=0x00
+Touch: x=215, y=121, gesture=0x00
+Touch: x=140, y=241, gesture=0x00
+Touch: x=123, y=236, gesture=0x00
+Touch: x=123, y=236, gesture=0x00
+Touch: x=123, y=236, gesture=0x00
+Touch: x=123, y=236, gesture=0x00
+Touch: x=123, y=236, gesture=0x00
+Touch: x=123, y=236, gesture=0x00
+Touch: x=123, y=236, gesture=0x00
+Touch: x=123, y=236, gesture=0x00
+Touch: x=122, y=87, gesture=0x00
+Touch: x=122, y=87, gesture=0x00
+Touch: x=122, y=87, gesture=0x00
+Touch: x=122, y=87, gesture=0x00
+Touch: x=130, y=141, gesture=0x00
+Touch: x=130, y=141, gesture=0x00
+Touch: x=130, y=141, gesture=0x00
+Touch: x=130, y=141, gesture=0x00
+Touch: x=114, y=220, gesture=0x00
+Touch: x=114, y=220, gesture=0x00
+Touch: x=114, y=220, gesture=0x00
+Touch: x=114, y=220, gesture=0x00
+Touch: x=114, y=220, gesture=0x00
+Touch: x=193, y=189, gesture=0x00
+Touch: x=193, y=189, gesture=0x00
+Touch: x=193, y=189, gesture=0x00
+Touch: x=193, y=189, gesture=0x00
+Touch: x=130, y=70, gesture=0x00
+Touch: x=130, y=70, gesture=0x00
+Touch: x=130, y=70, gesture=0x00
+Touch: x=62, y=87, gesture=0x00
+Touch: x=62, y=87, gesture=0x00
+Touch: x=57, y=90, gesture=0x00
+Touch: x=43, y=109, gesture=0x00
+Touch: x=39, y=117, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
+Touch: x=32, y=128, gesture=0x00
