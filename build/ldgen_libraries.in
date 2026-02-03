@@ -65,7 +65,7 @@ $<TARGET_FILE:__idf_espressif__cjson>
 $<TARGET_FILE:__idf_main>
 $<TARGET_FILE:__idf_lvgl>
 $<TARGET_FILE:__idf_lvgl_driver>
-$<TARGET_FILE:__idf_mqtt_client>
-$<TARGET_FILE:__idf_toucholed>
 $<TARGET_FILE:__idf_uart_manager>
 $<TARGET_FILE:__idf_wifi_manager>
+$<TARGET_FILE:__idf_mqtt_client>
+$<TARGET_FILE:__idf_toucholed>

@@ -44,7 +44,17 @@ static void lvgl_initialize_display(const lvgl_driver_config_t* config);
 static void lvgl_initialize_touch(const lvgl_driver_config_t* config);
 static void lvgl_initialize_buffers(const lvgl_driver_config_t* config);
 
+// FPS 定时器回调
+static void fps_timer_cb(lv_timer_t* timer);
 
+// 触摸事件回调
+static void touch_event_cb(lv_event_t* e);
+
+// 滑动条事件回调
+static void slider_event_cb(lv_event_t* e);
+
+// 按钮点击事件回调
+static void btn_click_cb(lv_event_t* e);
 
 
 
@@ -568,17 +578,20 @@ void lvgl_driver_create_test_ui(void) {
     lv_label_set_text(btn_label, "Click Me!");
     lv_obj_center(btn_label);
     
-    // 按钮点击事件
-    lv_obj_add_event_cb(btn, [](lv_event_t* e) {
-        static uint8_t cnt = 0;
-        lv_obj_t* btn = lv_event_get_target(e);
-        lv_obj_t* label = lv_obj_get_child(btn, 0);
+    
+
+    // lv_obj_add_event_cb(btn, [](lv_event_t* e) {
+    //     static uint8_t cnt = 0;
+    //     lv_obj_t* btn = lv_event_get_target(e);
+    //     lv_obj_t* label = lv_obj_get_child(btn, 0);
         
-        cnt++;
-        lv_label_set_text_fmt(label, "Clicked: %d", cnt);
+    //     cnt++;
+    //     lv_label_set_text_fmt(label, "Clicked: %d", cnt);
         
-        ESP_LOGI(TAG, "Button clicked %d times", cnt);
-    }, LV_EVENT_CLICKED, NULL);
+    //     ESP_LOGI(TAG, "Button clicked %d times", cnt);
+    // }, LV_EVENT_CLICKED, NULL);
+
+
     
     // 创建滑动条
     lv_obj_t* slider = lv_slider_create(scr);
@@ -591,16 +604,18 @@ void lvgl_driver_create_test_ui(void) {
     lv_label_set_text_fmt(slider_label, "Value: %d", lv_slider_get_value(slider));
     lv_obj_align_to(slider_label, slider, LV_ALIGN_OUT_TOP_MID, 0, -10);
     
-    // 滑动条值改变事件
-    lv_obj_add_event_cb(slider, [](lv_event_t* e) {
-        lv_obj_t* slider = lv_event_get_target(e);
-        int32_t value = lv_slider_get_value(slider);
+   
+
+
+    // lv_obj_add_event_cb(slider, [](lv_event_t* e) {
+    //     lv_obj_t* slider = lv_event_get_target(e);
+    //     int32_t value = lv_slider_get_value(slider);
         
-        lv_obj_t* label = lv_event_get_user_data(e);
-        lv_label_set_text_fmt(label, "Value: %d", value);
+    //     lv_obj_t* label = lv_event_get_user_data(e);
+    //     lv_label_set_text_fmt(label, "Value: %d", value);
         
-        ESP_LOGD(TAG, "Slider value changed to %d", value);
-    }, LV_EVENT_VALUE_CHANGED, slider_label);
+    //     ESP_LOGD(TAG, "Slider value changed to %d", value);
+    // }, LV_EVENT_VALUE_CHANGED, slider_label);
     
     // 创建触摸测试区域
     lv_obj_t* touch_area = lv_obj_create(scr);
@@ -613,38 +628,106 @@ void lvgl_driver_create_test_ui(void) {
     lv_label_set_text(touch_label, "Touch");
     lv_obj_center(touch_label);
     
-    // 触摸事件
-    lv_obj_add_event_cb(touch_area, [](lv_event_t* e) {
-        lv_obj_t* obj = lv_event_get_target(e);
+    
+
+
+    // lv_obj_add_event_cb(touch_area, [](lv_event_t* e) {
+    //     lv_obj_t* obj = lv_event_get_target(e);
         
-        switch (lv_event_get_code(e)) {
-            case LV_EVENT_PRESSED:
-                lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_RED), 0);
-                ESP_LOGI(TAG, "Touch area pressed");
-                break;
+    //     switch (lv_event_get_code(e)) {
+    //         case LV_EVENT_PRESSED:
+    //             lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_RED), 0);
+    //             ESP_LOGI(TAG, "Touch area pressed");
+    //             break;
                 
-            case LV_EVENT_RELEASED:
-                lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_BLUE), 0);
-                ESP_LOGI(TAG, "Touch area released");
-                break;
+    //         case LV_EVENT_RELEASED:
+    //             lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_BLUE), 0);
+    //             ESP_LOGI(TAG, "Touch area released");
+    //             break;
                 
-            default:
-                break;
-        }
-    }, LV_EVENT_ALL, NULL);
+    //         default:
+    //             break;
+    //     }
+    // }, LV_EVENT_ALL, NULL);
     
     // 创建FPS显示标签
     lv_obj_t* fps_label = lv_label_create(scr);
     lv_label_set_text(fps_label, "FPS: 0");
     lv_obj_align(fps_label, LV_ALIGN_TOP_LEFT, 10, 10);
     lv_obj_set_style_text_color(fps_label, lv_palette_main(LV_PALETTE_GREEN), 0);
+
+    lv_timer_create(fps_timer_cb, 1000, fps_label);
     
-    // 更新FPS的定时器
-    lv_timer_create([](lv_timer_t* timer) {
-        lv_obj_t* label = timer->user_data;
-        uint32_t fps = lvgl_driver_get_fps();
-        lv_label_set_text_fmt(label, "FPS: %d", fps);
-    }, 1000, fps_label);
+    // 触摸事件（lambda 改成函数指针）
+    lv_obj_add_event_cb(touch_area, touch_event_cb, LV_EVENT_ALL, NULL);
+    
+    // 滑动条事件（lambda 改成函数指针）
+    lv_obj_add_event_cb(slider, slider_event_cb, LV_EVENT_VALUE_CHANGED, slider_label);
+    
+    // 按钮点击事件（lambda 改成函数指针）
+    lv_obj_add_event_cb(btn, btn_click_cb, LV_EVENT_CLICKED, NULL);
     
     ESP_LOGI(TAG, "Test UI created successfully");
 }
+
+//     lv_timer_create([](lv_timer_t* timer) {
+//         lv_obj_t* label = timer->user_data;
+//         uint32_t fps = lvgl_driver_get_fps();
+//         lv_label_set_text_fmt(label, "FPS: %d", fps);
+//     }, 1000, fps_label);
+    
+//     ESP_LOGI(TAG, "Test UI created successfully");
+// }
+
+// 按钮点击事件
+    static void btn_click_cb(lv_event_t* e) {
+    static uint8_t cnt = 0;
+    lv_obj_t* btn = lv_event_get_target(e);
+    lv_obj_t* label = lv_obj_get_child(btn, 0);
+    
+    cnt++;
+    lv_label_set_text_fmt(label, "Clicked: %d", cnt);
+    
+    ESP_LOGI(TAG, "Button clicked %d times", cnt);
+}
+
+ // 滑动条值改变事件
+    static void slider_event_cb(lv_event_t* e) {
+    lv_obj_t* slider = lv_event_get_target(e);
+    int32_t value = lv_slider_get_value(slider);
+    
+    lv_obj_t* label = lv_event_get_user_data(e);
+    lv_label_set_text_fmt(label, "Value: %d", value);
+    
+    ESP_LOGD(TAG, "Slider value changed to %d", value);
+}
+
+// 触摸事件
+    static void touch_event_cb(lv_event_t* e) {
+    lv_obj_t* obj = lv_event_get_target(e);
+    
+    switch (lv_event_get_code(e)) {
+        case LV_EVENT_PRESSED:
+            lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_RED), 0);
+            ESP_LOGI(TAG, "Touch area pressed");
+            break;
+            
+        case LV_EVENT_RELEASED:
+            lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_BLUE), 0);
+            ESP_LOGI(TAG, "Touch area released");
+            break;
+            
+        default:
+            break;
+    }
+}
+
+// 更新FPS的定时器
+    static void fps_timer_cb(lv_timer_t* timer) {
+    lv_obj_t* label = timer->user_data;
+    uint32_t fps = lvgl_driver_get_fps();
+    lv_label_set_text_fmt(label, "FPS: %d", fps);
+}
+
+
+
