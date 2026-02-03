@@ -20,3 +20,7 @@ This project is the ESP32 side of the intelligent greenhouse management system, 
 |:---|:---|
 | SDK | ESP-IDF v5.2 |
 | GUI 库 | LVGL v8.3.10 |
+
+
+请配合STM32PORT使用
+如果感兴趣请给我一个Star
